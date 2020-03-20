@@ -49,10 +49,10 @@ recognition.onresult = function(event) {
     index++;
 
     if (index >= 4) {
-        thoughts.children[(index - 4)].classList.add("invis");
+        thoughts.children[(0)].classList.add("invis");
 
         setTimeout(() => {
-            thoughts.removeChild(thoughts.children[(index - 4)]);
+            thoughts.removeChild(thoughts.children[0]);
         }, 700);
     }  
 }
